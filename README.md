@@ -9,8 +9,8 @@ MySQL Workbench
 Sakila Database
 
 ## List of Tables in the Sakila DB
-•	'actor'
-•	'actor_info'
+//	'actor'
+//'actor_info'
 •	'address'
 •	'category'
 •	'city'
