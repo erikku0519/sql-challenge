@@ -9,29 +9,29 @@ MySQL Workbench
 Sakila Database
 
 ## List of Tables in the Sakila DB
-'actor'
-'actor_info'
-'address'
-'category'
-'city'
-'country'
-'customer'
-'customer_list'
-'film'
-'film_actor'
-'film_category'
-'film_list'
-'film_text'
-'inventory'
-'language'
-'nicer_but_slower_film_list'
-'payment'
-'rental'
-'sales_by_film_category'
-'sales_by_store'
-'staff'
-'staff_list'
-'store'
+'actor'<br />
+'actor_info'<br />
+'address'<br />
+'category'<br />
+'city'<br />
+'country'<br />
+'customer'<br />
+'customer_list'<br />
+'film'<br />
+'film_actor'<br />
+'film_category'<br />
+'film_list'<br />
+'film_text'<br />
+'inventory'<br />
+'language'<br />
+'nicer_but_slower_film_list'<br />
+'payment'<br />
+'rental'<br />
+'sales_by_film_category'<br />
+'sales_by_store'<br />
+'staff'<br />
+'staff_list'<br />
+'store'<br />
 
 ## Author
 Eric Jung
