@@ -85,7 +85,7 @@ SHOW CREATE TABLE sakila.address;
 
 select staff.first_name,staff.last_name,address.address
 from sakila.staff staff
-inner join sakila.address address on staff.address_id=address.address_id;
+join sakila.address address on staff.address_id=address.address_id;
 
 
 -- 6b. Use JOIN to display the total amount rung up by each staff member in August of 2005. Use tables staff and payment:
@@ -93,7 +93,7 @@ inner join sakila.address address on staff.address_id=address.address_id;
 
 select staff.first_name,staff.last_name,sum(amount)
 from payment
-inner join staff on staff.staff_id=payment.staff_id
+join staff on staff.staff_id=payment.staff_id
 where payment.payment_date >  '2005-08-01 00:00:00' AND payment.payment_date < ' 2005-09-01 00:00:00'
 group by staff.last_name,staff.first_name
 order by last_name,first_name;
@@ -113,14 +113,12 @@ from sakila.inventory
 inner join  sakila.film on film.film_id=inventory.film_id
 where title= 'Hunchback Impossible';
 
-select *
-from payment;
 
 -- 6e. Using the tables payment and customer and the JOIN command, list the total paid by each customer. List the customers alphabetically by last name:
 
 select customer.first_name,customer.last_name,sum(amount)
 from customer
-inner join payment on payment.customer_id=customer.customer_id 
+join payment on payment.customer_id=customer.customer_id 
 group by customer.last_name,customer.first_name
 order by last_name,first_name;
 
@@ -217,7 +215,6 @@ limit 5;
 
 
 -- 8a. In your new role as an executive, you would like to have an easy way of viewing the Top five genres by gross revenue. 
-# Use the solution from the problem above to create a view. If you haven't solved 7h, you can substitute another query to create a view:
 
 create view top_five_genre as
 select c.name as 'Genre',sum(p.amount) as 'Gross_Revenue'
